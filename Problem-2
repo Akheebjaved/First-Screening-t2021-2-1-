@@ -1,0 +1,20 @@
+//Problem-2: With a single integer as the input, generate the following until a = x [series of numbers as shown in below examples]
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int i, j, rows;
+   cout <<"Input the number"<<"\n";
+   cin >> rows ;
+   if(rows%2==0)
+    rows-=1;
+    j=1;
+   for (i = 1; i <= rows; ++i) {
+         cout<<j++<<"\t";
+         j++;
+   }
+    return 0;
+}
